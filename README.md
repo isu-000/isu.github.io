@@ -85,7 +85,7 @@
 
 ### <font size="3" style="background: yellow">※影片經壓縮會掉幀</font>    
 
-<p><img title="" src="https://i.imgur.com/P0eyc3O.gif" width="100%" alt="圖片名稱"align="center"
+<p><img title="" src="[https://i.imgur.com/P0eyc3O.gif](https://user-images.githubusercontent.com/104184988/173234575-d844b789-1092-402a-80cc-f54ff8500031.mp4
+)" width="100%" alt="圖片名稱"align="center"
             data-align="inline"> </p>
         
-https://user-images.githubusercontent.com/104184988/173234575-d844b789-1092-402a-80cc-f54ff8500031.mp4
