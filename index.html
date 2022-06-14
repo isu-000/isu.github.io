@@ -1,117 +1,53 @@
-<!--
-此檔案為Markdown撰寫 => html
-有任何問題，請提出討論。
-20220524
--->
 <!DOCTYPE html>
 <html lang="zh">
 
 <head>
     <meta charset="utf-8" />
-    <title>110專題</title>
+    <title>Markdown在线编辑器 - www.MdEditor.com</title>
+    <link rel="shortcut icon" href="https://www.mdeditor.com/images/logos/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-    <h1 id="h1-2022-5-10"><a name="2022/5/10" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>2022/5/10</h1>
-    <h2 id="h2--"><a name="《問題》" class="reference-link"></a><span class="header-link octicon octicon-link"></span>《問題》
-    </h2>
-    <h3 id="h3--"><a name="【介面設計】" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>【介面設計】</h3>
-    <ul>
-        <li>
-            <p><strong>配色對比</strong></p>
-        </li>
-        <li>
-            <p><strong>按鈕設計</strong></p>
-        </li>
-    </ul>
-    <h3 id="h3--"><a name="【使用者體驗】" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>【使用者體驗】</h3>
-    <ul>
-        <li>
-            <p><strong>測量速度過快</strong></p>
-        </li>
-        <li>
-            <p><strong>測量期間音效</strong></p>
-        </li>
-    </ul>
-    <hr>
-    <h1 id="h1-2022-5-24"><a name="2022/5/24" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>2022/5/24</h1>
-    <h2 id="h2--"><a name="《已處理》" class="reference-link"></a><span class="header-link octicon octicon-link"></span>《已處理》
-    </h2>
-    <h3 id="h3--"><a name="【介面設計】" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>【介面設計】</h3>
-    <ul>
-        <li>
-            <p><strong>配色對比 —&gt; 介面美化</strong></p>
-        </li>
-        <li>
-            <p><strong>按鈕設計 —&gt; 介面美化</strong></p>
-        </li>
-    </ul>
-    <br>
-    <font size="5" style="background: yellow">※錄影會有掉幀</font>
-    <p><img title="" src="https://i.imgur.com/ND10xSn.png" width="1280" height="720" alt="图片名称" align="center"
-            data-align="inline"> </p>
-    <h3 id="h3--"><a name="【使用者體驗】" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>【使用者體驗】</h3>
-    <ul>
-        <li>
-            <p><strong>測量速度過快 —&gt; 因為每一位使用者對穴位點了解程度不同，所需準備的時間不一，所以更改為每一個穴位點的時間可以依使用者需準備時間做調整。</strong></p>
-        </li>
-        <li>
-            <p><strong>測量期間音效 —&gt; 加入測量期間音效。</strong></p>
-        </li>
-    </ul>
-    <hr>
+    <h1 id="h1-2022-6-14"><a name="2022/6/14" class="reference-link"></a><span
+            class="header-link octicon octicon-link"></span>2022/6/14</h1>
     <h2 id="h2--"><a name="《新增》" class="reference-link"></a><span class="header-link octicon octicon-link"></span>《新增》
     </h2>
-    <h3 id="h3--"><a name="【介面設計】" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>【介面設計】</h3>
-    <h4 id="h4--"><a name="文字標籤:" class="reference-link"></a><span class="header-link octicon octicon-link"></span>文字標籤:
-    </h4>
+    <h3 id="h3--"><a name="【登入功能】無美化，只討論功能" class="reference-link"></a><span
+            class="header-link octicon octicon-link"></span>【登入功能】無美化，只討論功能</h3>
     <ul>
-        <li>
-            <p><strong>1.測定點圖示</strong></p>
+        <li><strong>使用檔案</strong>
+            <ul>
+                <li>register.txt (緩存使用者註冊資料)</li>
+                <li>Login.txt (緩存使用者登入資料)</li>
+            </ul>
         </li>
         <li>
-            <p><strong>2.測量平衡圖</strong></p>
-        </li>
-        <li>
-            <p><strong>3.經脈能量測定值</strong></p>
+            <p><strong>主旨</strong></p>
+            <ul>
+                <li>
+                    <p>當使用者第一次下載應用程式並開啟時，新增 register.txt , Login.txt
+                        ，因為第一次使用所以這兩個文字檔都是空白，當讀取到檔案是空白，打開的介面會是註冊介面，填寫完資料按下註冊會跳轉到測量介面。並同時更新 register.txt 緩存資料。</p>
+                </li>
+                <li>
+                    <p>當使用者不是第一次使用，再次開啟應用程式時，會讀取Login.txt緩存資料直接顯示上一次使用者，點選並可以跳轉到測量介面。</p>
+                </li>
+                <li>
+                    <p>目前帳號僅6組為上限</p>
+                </li>
+                <li>
+                    <p>再開啟應用程式時，也提供新增帳號，選擇其他使用者功能可以選擇。</p>
+                </li>
+                <li>
+                    <p>選擇其他使用者。此功能會讀取 register.txt 緩存資料，如果有1筆資料會顯示1位使用者，以此類推。</p>
+                </li>
+                <li>
+                    <p>每一次開啟時都會檢查這兩個文字檔是否存在，如果不存在就會新增空白文字檔。並對應相同介面。 </p>
+                </li>
+            </ul>
         </li>
     </ul>
-    <h4 id="h4--"><a name="版面切換(左/右):" class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>版面切換(左/右):</h4>
-    <ul>
-        <li>
-            <p><strong>1.經脈測量</strong></p>
-        </li>
-        <li>
-            <p><strong>2.經脈分析</strong> ※後續可依需求新增</p>
-        </li>
-    </ul>
-    <br>
-    <font size="5" style="background: yellow">※錄影會有掉幀</font>
-    <p><img src="https://i.imgur.com/xkGRCLr.gif" width="1280" height="720" alt="1"> </p>
-    <h3 id="h3--"><a name=" 【按鈕功能】 " class="reference-link"></a><span
-            class="header-link octicon octicon-link"></span>【按鈕功能】
-    </h3>
-    <h4 id="h4--"><a name="按鈕:" class="reference-link"></a><span class="header-link octicon octicon-link"></span>按鈕:
-    </h4>
-    <ul>
-        <li>
-            <p><strong>1.開始測量</strong></p>
-        </li>
-        <li>
-            <p><strong>2.停止測量</strong></p>
-        </li>
-        <li>
-            <p><strong>3.重新測量</strong> ※後續可依需求新增。</p>
-        </li>
-    </ul>
+    <hr> <iframe src="https://streamable.com/pfm6j2" scrolling="no" border="0" frameborder="no" framespacing="0"
+        allowfullscreen="true" height="600" width="800"><br> </iframe>
 </body>
 
 </html>
